@@ -1,0 +1,135 @@
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[11pt,a4paper]{altacv}
+%Layout
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+%Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+\definecolor{cadmiumgreen}{rgb}{0.0, 0.42, 0.24}
+\definecolor{burgundy}{rgb}{0.5, 0.0, 0.13}\definecolor{dukeblue}{rgb}{0.0, 0.0, 0.61}
+\definecolor{gg}{rgb}{0.47, 0.09, 0.29}
+%Colors
+
+\definecolor{accent}{HTML}{000066}
+\definecolor{heading}{HTML}{000000}
+\definecolor{emphasis}{HTML}{666699}
+\definecolor{body}{HTML}{000000}
+
+\colorlet{heading}{heading}
+\colorlet{accent}{accent}
+\colorlet{emphasis}{emphasis}
+\colorlet{body}{body}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=dukeblue,      
+    urlcolor=dukeblue,
+}
+\urlstyle{same}
+
+\begin{document}
+\name{Dimitrios Lygkonis}
+\tagline{Software Engineer}
+\personalinfo{
+    \printinfo{\faBirthdayCake}{8th Feb 1996}
+    \email{\texttt{dimitris.ligonis@gmail.com}}
+    \location{London, UK}
+}
+
+%
+
+\begin{fullwidth}
+    \makecvheader
+\end{fullwidth}
+
+%
+\bigskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Experience %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection[page1sidebar]{Experience}
+
+%%%%%%%%%%%%%
+%Experience 1
+%%%%%%%%%%%%%
+
+\cvevent{Software Engineer}{FINBOURNE Technology}{October 2022 -- October 2023}{London, UK}
+\medskip
+
+    Part of the {\bf Analytics} team. \medskip
+
+    \begin{itemize}
+        \setlength\itemsep{1em}
+    \item {Contributed to the {\it development}, {\it monitoring} and {\it maintenance} of a distributed computing grid.} \\
+          \smallskip
+          \begin{itemize}
+              
+              \item[$\circ$] Built logging infrastructure handling 1 million trace logs per day, with 99.9\% uptime. 
+              
+              Stack: {\bf Kafka/Elastic Search}
+              
+              \item[$\circ$] Designed and implemented a scripted translation service for financial entities handling 50 thousand requests a day that helped onboard new clients.
+              
+              Stack: {\bf .NET/PostgreSql/JavaScript/XSLT}
+
+              \item[$\circ$] Developed, deployed and maintained distributed {\bf.NET} microservice applications integrating market data providers as well as serving internal functionality using {\bf RabbitMQ} for messaging, {\bf Redis} for distributed rate limiting.
+              
+              \item[$\circ$] Created pipelines covering all {\bf CI/CD} stages.
+              
+              Stack: {\bf Kubernetes}/{\bf Concourse}/{\bf Helm}
+                        
+          \end{itemize}
+
+\end{itemize}
+\cvsection{Skills}
+
+\begin{itemize}
+    \item {\bf Software Development:} 
+    \smallskip
+    \begin{itemize}
+        \item[$\circ$] .NET, Python, Bash, PostgreSql, JavaScript, XSLT
+    \end{itemize}
+    \smallskip
+    \item {\bf DevOps:} 
+    \smallskip
+    \begin{itemize}
+        \item[$\circ$] Kubernetes, Helm, Concourse, Prometheus, Loki
+    \end{itemize}
+    \smallskip
+    \item {\bf Data pipelines/storage :} 
+    \smallskip
+    \begin{itemize}
+        \item[$\circ$] Kafka, RabbitMQ, Redis, Elastic Search, S3 
+    \end{itemize}
+    
+\end{itemize}
+
+
+\medskip
+
+
+\cvsection{Interests}
+\justifying I enjoy playing with computer systems outside work. During my spare time, I am maintaining a small Kubernetes cluster at home, using ArgoCD/ArgoWorkflows for CI/CD. I enjoy doing projects that involve modelling advanced concepts in distributed computing with toy model services and APIs for personal use and fun.
+
+\smallskip
+I also love art. In my free time I enjoy playing music (string instruments), watching films and going to the theatre. 
+
+
+
+\medskip
+\cvsection{Languages}
+\begin{itemize}
+    \item[$\circ$]  \textbf{\textcolor{emphasis}{English}}\hfill (fluent)
+    \item[$\circ$]  \textbf{\textcolor{emphasis}{Greek}}\hfill (native) 
+\end{itemize}
+\medskip
+
+\end{document}
