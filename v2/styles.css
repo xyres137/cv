@@ -1,0 +1,289 @@
+:root {
+    /* Printer-friendly light mode with subtle hacker touches */
+    --bg-primary: #ffffff;
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --accent-primary: #000000;      /* Black for all primary accents */
+    --accent-secondary: #000000;    /* Black for headers */
+    --accent-highlight: #024bd2;    /* Black for metrics */
+    --border-light: #cccccc;
+    --bg-highlight: #f9f9f9;        /* Very light gray */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.4;
+    font-size: 10pt;
+    padding: 0;
+    margin: 0;
+}
+
+.cv-content {
+    width: 210mm;
+    margin: 0 auto;
+    background: var(--bg-primary);
+    padding: 15mm;
+}
+
+.header {
+    border-bottom: 2pt solid var(--accent-secondary);
+    padding-bottom: 10pt;
+    margin-bottom: 15pt;
+}
+
+.name {
+    font-size: 18pt;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2pt;
+    letter-spacing: -0.02em;
+    font-family: Arial, sans-serif;
+}
+
+.headline {
+    font-size: 12pt;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 8pt;
+    padding-left: 15pt;
+    position: relative;
+}
+
+.headline::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: var(--text-primary);
+    font-weight: bold;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12pt;
+    font-size: 10pt;
+    color: var(--text-secondary);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 3pt;
+}
+
+.contact-item a {
+    color: var(--accent-highlight);
+    text-decoration: underline;
+}
+
+.section {
+    margin-bottom: 11pt;
+}
+
+.section-header {
+    font-size: 12pt;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8pt;
+    padding-bottom: 3pt;
+    border-bottom: 1pt solid var(--border-light);
+}
+
+.experience-item {
+    margin-bottom: 12pt;
+    position: relative;
+    padding-left: 10pt;
+}
+
+.experience-item::before {
+    content: '▪';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.experience-header {
+    margin-bottom: 6pt;
+}
+
+.role-title {
+    font-size: 12pt;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 2pt;
+    font-family: Arial, sans-serif;
+}
+
+.company-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 3pt;
+    margin-bottom: 4pt;
+}
+
+.company-name {
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: 10pt;
+    text-decoration: underline;
+}
+
+.date-location {
+    font-size: 10pt;
+    color: var(--text-secondary);
+}
+
+.role-scope {
+    font-style: italic;
+    color: var(--text-secondary);
+    margin-bottom: 6pt;
+    font-size: 10pt;
+}
+
+.achievements {
+    list-style: none;
+    margin-left: 0;
+}
+
+.achievements li {
+    margin-bottom: 3pt;
+    padding-left: 12pt;
+    position: relative;
+    color: var(--text-primary);
+    line-height: 1.5;
+    font-size: 10pt;
+    text-align: justify;
+}
+
+.achievements li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--text-primary);
+}
+
+.metric {
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+.tech-highlight {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.achievements a {
+    color: var(--text-primary);
+    text-decoration: underline;
+    color: var(--accent-highlight)
+}
+
+.tech-stack {
+    margin-top: 6pt;
+    padding-top: 6pt;
+    border-top: 0.5pt solid var(--border-light);
+    font-size: 10pt;
+    color: var(--text-secondary);
+}
+
+.tech-stack strong {
+    color: var(--text-primary);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100pt, 1fr));
+    gap: 6pt;
+}
+
+.skill-category {
+    background: var(--bg-highlight);
+    padding: 8pt;
+    border: 0.5pt solid var(--border-light);
+}
+
+.skill-category h4 {
+    font-size: 10pt;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4pt;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.skill-items {
+    font-size: 9pt;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.education-item {
+    margin-bottom: 10pt;
+    padding-left: 10pt;
+    position: relative;
+}
+
+.education-item::before {
+    content: '▪';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.degree-title {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 2pt;
+    font-size: 11pt;
+    font-family: Arial, sans-serif;
+}
+
+.education-details {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-secondary);
+    font-size: 10pt;
+    margin-bottom: 4pt;
+}
+
+.summary {
+    background: var(--bg-highlight);
+    padding: 10pt;
+    border: 0.5pt solid var(--border-light);
+    margin-bottom: 10pt;
+    font-size: 10pt;
+    line-height: 1.5;
+    color: var(--text-primary);
+    text-align: justify;
+}
+
+.summary strong {
+    font-weight: 700;
+}
+
+@media print {
+    body, .cv-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .tech-highlight,
+    .metric {
+        background: none;
+        padding: 0;
+    }
+}

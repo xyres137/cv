@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimitris Lygkonis CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv-content">
+        <div class="header">
+            <h1 class="name">Dimitris Lygkonis</h1>
+            <div class="headline">Software Engineer</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:dlygkonis@gmail.com">dlygkonis@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>+30 [phone-number]</span>
+                </div>
+                <div class="contact-item">
+                    <span>🔗</span>
+                    <a href="https://github.com/xyres137">github.com/xyres137</a>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Athens, Greece</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <strong>Software engineer with PhD in Mathematical Physics</strong> bringing algorithmic
+            expertise and production engineering experience. Currently leading engineering for
+            EU-funded research projects totaling €15M+ in budget.
+        </div>
+
+        <div class="section">
+            <h2 class="section-header">Professional Experience</h2>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="role-title">Lead Software Engineer</div>
+                    <div class="company-info">
+                        <span class="company-name">Institute of Communication and Computer Systems (ICCS)</span>
+                        <span class="date-location">March 2023 - Present | Athens, Greece</span>
+                    </div>
+                    <div class="role-scope">Leading backend, DevOps, and MLOps engineering for Earth Observation team
+                        supporting multiple EU research projects with combined €15M+ budget</div>
+                </div>
+                <ul class="achievements">
+                    <li>Architected and deployed <span class="tech-highlight">multi-tenant STAC-compliant</span> Earth
+                        Observation platform processing terabytes of satellite imagery datasets, using <span
+                            class="tech-highlight">Argo Workflows</span>
+                        for pipeline orchestration</li>
+                    <li>Built production-grade <span class="tech-highlight">Kubernetes-native MLOps pipeline</span> for
+                        ESA's [<a href="https://www.linkedin.com/company/esa-project-asimov">ASIMOV</a>] project,
+                        automating the complete model lifecycle from development to
+                        deployment, with <span class="tech-highlight">Airflow</span>, <span
+                            class="tech-highlight">MLFlow</span> and <span class="tech-highlight">Ray</span></li>
+                    <li>Engineered high-throughput sensor data pipeline handling 2k
+                        requests/second using <span class="tech-highlight">Postgres</span> as message queue and
+                        microservice processors for [<a href="https://digit-h2020.eu/">DigIT</a>] mining monitoring
+                        project
+                    </li>
+                    <li>Designed ETL system processing IoT events for food supply chain traceability,
+                        using OGC standard, <span class="tech-highlight">SensorThings API</span>, as part of
+                        [<a href="https://theros-project.eu">THEROS</a>] project</li>
+                    <li>Mentored junior engineers & data scientists, establishing code review practices and promoted a
+                        culture of
+                        knowledge sharing and continuous learning</li>
+                </ul>
+                <div class="tech-stack">
+                    <strong>Core Technologies:</strong> Python, FastAPI, Postgres, MQTT, Kafka, Kubernetes, Argo [CD,
+                    Workflows],
+                    Airflow, MLFlow, Ray, NVIDIA K8s Operator, Prometheus, Grafana
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="role-title">Software Engineer</div>
+                    <div class="company-info">
+                        <span class="company-name">FINBOURNE Technology</span>
+                        <span class="date-location">October 2022 - November 2023 | London, UK</span>
+                    </div>
+                    <div class="role-scope">Core member of Research team building distributed quantitative finance
+                        processing grid</div>
+                </div>
+                <ul class="achievements">
+                    <li>Led design and implementation of <span class="tech-highlight">JavaScript FFI-based</span>
+                        financial instrument translation engine,
+                        reducing client onboarding time by enabling business users to write, store, version and execute
+                        custom transformation
+                        scripts</li>
+                    <li>Built and deployed <span class="tech-highlight">.NET</span> microservices ingesting and
+                        processing market data from external feeds</li>
+                    <li>Implemented distributed logging infrastructure processing 1M+
+                        events/day using <span class="tech-highlight">Kafka</span> and <span
+                            class="tech-highlight">ElasticSearch</span></li>
+                    <li>Built CI/CD pipelines using <span class="tech-highlight">Concourse</span> and proactively
+                        contributed to systems monitoring (alerts, metrics, logs) and Level
+                        3 support</li>
+                </ul>
+                <div class="tech-stack">
+                    <strong>Core Technologies:</strong> C#/.NET 6, Kubernetes, RabbitMQ, Redis, PostgreSQL, JavaScript
+                    V8, Kafka, ElasticSearch
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-header">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Languages & Frameworks</h4>
+                    <div class="skill-items">
+                        Python, C#, SQL, Bash (expert level) <br><br>
+                        Rust, Haskell, JavaScript (basic level)
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Databases & Data Brokers</h4>
+                    <div class="skill-items">
+                        Postgres, Redis, Kafka, RabbitMQ, TimescaleDB, MQTT, OpenSearch, ElasticSearch, S3
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>DevOps & MLOps</h4>
+                    <div class="skill-items">
+                        Proxmox, Kubernetes, Argo[CD, Workflows], Airflow, MLFlow, Ray
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Monitoring & Performance</h4>
+                    <div class="skill-items">
+                        Prometheus, Grafana, Victoria Metrics, Loki, Locust
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-header">Education</h2>
+
+            <div class="education-item">
+                <div class="degree-title">PhD in Mathematical Physics (with integrated MSc, Distinction)</div>
+                <div class="education-details">
+                    <span>University of Warwick, UK</span>
+                    <span>2018 - 2022</span>
+                </div>
+                <ul class="achievements">
+                    <li>Research on stochastic PDEs and polymer models with applications to algorithmic optimization
+                    </li>
+                    <li>Published 3 papers in top-tier journals [<a
+                            href="https://link.springer.com/article/10.1007/s00440-024-01267-3">PTRF</a>, <a
+                            href="https://link.springer.com/article/10.1007/s00220-023-04694-w">COMP</a>, <a
+                            href="https://projecteuclid.org/journals/annales-de-linstitut-henri-poincare-probabilites-et-statistiques/volume-58/issue-1/EdwardsWilkinson-fluctuations-for-the-directed-polymer-in-the-full-L2/10.1214/21-AIHP1173.full">AIHP</a>]
+                        with 74 citations</li>
+                    <li>Specialized in Stochastic Processes and Bayesian Machine Learning</li>
+                    <li>Fully funded through MASDOC DTC scholarship</li>
+                </ul>
+            </div>
+
+            <div class="education-item">
+                <div class="degree-title">BSc in Mathematics</div>
+                <div class="education-details">
+                    <span>University of Athens, Greece</span>
+                    <span>2014 - 2018</span>
+                </div>
+                <ul class="achievements">
+                    <li>GPA: 8.8/10 (top 5% of class)</li>
+                    <li>Ranked 1st nationally in university entrance exams (19.53/20)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
