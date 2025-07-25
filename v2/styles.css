@@ -6,7 +6,7 @@
     --accent-primary: #000000;      /* Black for all primary accents */
     --accent-secondary: #000000;    /* Black for headers */
     --accent-highlight: #024bd2;    /* Black for metrics */
-    --border-light: #cccccc;
+    --border-light: #6a6a6a;
     --bg-highlight: #f9f9f9;        /* Very light gray */
 }
 
@@ -96,7 +96,7 @@ body {
     letter-spacing: 0.05em;
     margin-bottom: 8pt;
     padding-bottom: 3pt;
-    border-bottom: 1pt solid var(--border-light);
+    border-bottom: 1.2pt solid var(--border-light);
 }
 
 .experience-item {
@@ -280,8 +280,6 @@ body {
         margin: 0;
         padding: 0;
     }
-    
-    .tech-highlight,
     .metric {
         background: none;
         padding: 0;
